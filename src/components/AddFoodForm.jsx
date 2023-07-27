@@ -17,6 +17,10 @@ const Form = ({ foods, setFoods }) => {
       id: uuidv4(), //We import a random id from v4 (because our new food doesn't have an Id)
     };
     setFoods([newFood, ...foods]);
+    setName("");
+    setImage("");
+    setCalories(0);
+    setServings(0); //This resets the form after using it
   };
 
   return (
