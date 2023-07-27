@@ -6,12 +6,11 @@ import Form from "./components/AddFoodForm";
 
 function App() {
   const [foods, setFoods] = useState(foodsJson);
-  const [newFood, setNewFood] = useState("");
 
   return (
     <div className="App">
       <h1>LAB | React IronNutrition</h1>
-      <Form newFood={newFood} setNewFood={setNewFood} />
+      <Form foods={foods} setFoods={setFoods} />
 
       {foods.map((oneFood) => {
         return (
